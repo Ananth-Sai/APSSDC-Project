@@ -1,0 +1,18 @@
+{% extends 'other/base.htm' %}
+{% block title %} Logout Page {% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6 offset-md-3">
+            <div class="border bg-white p-3">
+                <h3>Logout Page</h3>
+                <hr>
+                <div class="alert alert-danger">
+                    <h3>You have <b>Logged out</b></h3>
+                </div>
+                <a href="{% url 'user_login' %}" class="btn btn-success">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
